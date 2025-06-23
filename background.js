@@ -38,7 +38,7 @@ function updateTime() {
 
 
   chrome.storage.local.get([key], (result) => {
-    const total = result[hostname] || 0;
+    const total = result[key] || 0;
     const apiKey = result.apiKey;
   chrome.storage.local.set({ [key]: total + timeSpent });
   });
