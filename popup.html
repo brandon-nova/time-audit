@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site Time Tracker</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 16px;
+      background: #161e2e;
+      color: #f5f7fa;
+      min-width: 250px;
+    }
+    h3 {
+      margin-top: 0;
+      color: #6aa6ff;
+      font-size: 1.2rem;
+    }
+    ul {
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 18px;
+    }
+    li {
+      margin-bottom: 6px;
+      background: #222b44;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    #openDashboardBtn {
+      width: 100%;
+      padding: 8px;
+      background: #6aa6ff;
+      color: #111927;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.18s;
+      margin-top: 6px;
+    }
+    #openDashboardBtn:hover {
+      background: #85c1ff;
+    }
+  </style>
+</head>
+<body>
+  <h3>Today's Usage</h3>
+    <ul id="siteList"></ul>
+  <button id="openDashboardBtn">Open Dashboard</button>
+  <script src="popup.js"></script>
+</body>
+</html>
